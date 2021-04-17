@@ -38,6 +38,11 @@ export async function getStaticProps(context) {
 
   const event = await getEventById(eventId);
 
+  if(!event){
+    return {
+      notFound: true
+    }
+  }
   return {
     props: {
       selectedEvent: event
