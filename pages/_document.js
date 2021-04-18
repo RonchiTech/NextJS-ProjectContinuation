@@ -6,6 +6,8 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head />
         <body>
+            {/* for portals */}
+            <div id='overlays'/> 
           <Main />
           <NextScript />
         </body>
